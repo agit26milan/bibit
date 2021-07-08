@@ -7,6 +7,40 @@
   pointer-events: none;
 }
 
+
+.no-border {
+  border: none !important;
+}
+
+.align-center-flex {
+  align-items: center;
+}
+.flex {
+  display: flex !important;
+}
+
+.autocomplete-container {
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.center-flex {
+  align-items: center;
+  justify-content: center;
+}
+
+.pointer {
+  cursor: pointer  !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
