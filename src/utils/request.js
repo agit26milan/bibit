@@ -11,8 +11,6 @@ export const requestApi = async (link, method) => {
     url
   }
 
-  console.log(sendData, 'nani')
-
   try {
     const response = await axios(sendData)
     const data = response.data

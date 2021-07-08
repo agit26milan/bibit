@@ -10,7 +10,6 @@ import { handleParamUrl } from '../../utils/commons'
 function * getMobieListSaga ({ payload }) {
   let url = handleParamUrl('', payload.params)
   const processGetListMovie = yield call(requestApi, url, 'GET')
-  console.log(processGetListMovie, 'saik')
   if(processGetListMovie.Response === "True") {
     if(payload.params.page <= 1) {
       yield put({

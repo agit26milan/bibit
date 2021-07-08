@@ -16,7 +16,6 @@ function * getMovieDetail ({ payload }) {
         payload: processGetDetailMovie
       })
     } else {
-      console.log(processGetDetailMovie, 'sanatui')
       yield put({
         type: FAIL_GET_MOVIE_DETAIL,
         payload: processGetDetailMovie.Error

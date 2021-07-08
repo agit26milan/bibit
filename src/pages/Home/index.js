@@ -26,7 +26,10 @@ const Home = (props) => {
     const handleSarchMovie = (event) => {
         const {name, value} = event.target
         if (event.charCode === 13) {
-            resetMovieHandle()
+            setShowAutoComplete(false)
+            if(params.s !== value) {
+                resetMovieHandle()
+            }
             setParams({...params, [name]: value, page: 1})
             if(realPage > 1) {
                setRealPage(1)
